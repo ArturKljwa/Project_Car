@@ -1,11 +1,14 @@
 // abstract
-@import "abstract/contants";
+@import "abstract/constants";
 
 // Base
 @import "base/base";
+@import "base/phone";
+@import "base/icon";
 
 //components
-
+@import "components/navigation";
 
 //layouts
 @import "layouts/header";
+@import "layouts/container";

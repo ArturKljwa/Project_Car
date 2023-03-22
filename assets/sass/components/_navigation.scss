@@ -1,0 +1,23 @@
+.navigation {
+    display: flex;
+    max-width: 720px;
+    padding: 0;
+    &__list {
+        list-style: none;
+        margin-right: 50px;
+        &:last-child{
+            margin-right: 33px;
+        }
+
+    }
+    &__item {
+        text-decoration: none;
+        color: $color-additional;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        &_active {
+            border-bottom: 1px solid #ffffff
+        }
+    }
+}

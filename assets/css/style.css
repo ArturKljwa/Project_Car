@@ -6,4 +6,76 @@ body {
   font-family: "Tilda Sans", sans-serif;
 }
 
+.phone {
+  text-decoration: none;
+  font-family: "Tilda Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+}
+
+.icon_telegram {
+  background-image: url("./../img/icons/telegram.svg");
+  margin-right: 16px;
+}
+
+.icon_youtube {
+  background-image: url("./../img/icons/youtube.svg");
+}
+
+.navigation {
+  display: flex;
+  max-width: 720px;
+  padding: 0;
+}
+.navigation__list {
+  list-style: none;
+  margin-right: 50px;
+}
+.navigation__list:last-child {
+  margin-right: 33px;
+}
+.navigation__item {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+.navigation__item_active {
+  border-bottom: 1px solid #ffffff;
+}
+
+.header {
+  background-color: #044EF4;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.header__navigation {
+  margin-right: 33px;
+}
+.header__contacts {
+  display: flex;
+}
+.header__messager {
+  margin-left: 44px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
 /*# sourceMappingURL=style.css.map */

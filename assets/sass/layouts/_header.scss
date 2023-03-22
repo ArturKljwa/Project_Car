@@ -1,0 +1,17 @@
+.header {
+background-color: $color-primary;
+
+    &__container {
+    display: flex;
+    align-items: center;
+}
+    &__navigation {
+    margin-right: 33px;
+}
+&__contacts {
+    display: flex;
+}
+&__messager {
+    margin-left: 44px;
+}
+}

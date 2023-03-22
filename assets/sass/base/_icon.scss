@@ -1,0 +1,15 @@
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+}
+.icon_telegram {
+    background-image: url('./../img/icons/telegram.svg');
+    margin-right: 16px;
+
+}
+.icon_youtube {
+    background-image: url('./../img/icons/youtube.svg')
+}
