@@ -5,6 +5,7 @@
     flex-direction: column;
     width: 308px;
     height: 394px;
+    padding-bottom: 50px;
 
 }
 .card__img {
@@ -14,6 +15,15 @@
     background-size:cover;
     background-position:center;
     min-height: 200px;
+    &_1 {
+        background-image: url('./../img/slider/x_ray.jpg');
+    }
+    &_2 {
+        background-image: url('./../img/slider/lada.jpg');
+    }
+    &_3 {
+        background-image: url('./../img/slider/vesta.jpg');
+    }
 }
 .card__title {
     margin: 0;
@@ -52,13 +62,15 @@ margin-top: 164px;
     width: 40px;
     height: 4px;
     background: rgba(205, 205, 205, 0.4);
-    border-radius: 10px
+    border-radius: 10px;
+    cursor: pointer;
 }
 .card__slide_item_active {
     background-color: $color-primary;
 }
 .card__slider {
     height: 273px;
+    width: 308px;
 }
 .card__descr {
         color: $color-text;

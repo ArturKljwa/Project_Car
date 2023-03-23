@@ -1,6 +1,7 @@
 a {
   text-decoration: none;
   color: inherit;
+  white-space: nowrap;
 }
 
 html {
@@ -46,8 +47,7 @@ body {
 .breadcrumbs__list-item {
   display: inline-block;
   text-decoration: none;
-  padding-right: 25px;
-  margin-right: 5px;
+  margin-right: 30px;
   position: relative;
   font-family: "Tilda Sans";
   font-style: normal;
@@ -55,11 +55,12 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #7F8187;
+  padding-bottom: 5px;
 }
 .breadcrumbs__list-item::after {
   content: "";
   position: absolute;
-  right: 0;
+  right: -25px;
   top: 6px;
   background-image: url("./../img/icons/arrows.svg");
   width: 20px;
@@ -67,6 +68,10 @@ body {
 }
 .breadcrumbs__list-item:last-child::after {
   display: none;
+}
+
+.breadcrumbs__list-item_active {
+  border-bottom: 2px solid #044EF4;
 }
 
 .title {
@@ -182,8 +187,25 @@ body {
 }
 
 .catalog__slider {
+  width: 972px;
+  padding-left: 16px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+
+.catalog__slider_btn {
+  display: block;
+  background: rgba(4, 78, 244, 0.2);
+  background-image: url("./../img/icons/arow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  right: -22px;
+  top: 33%;
+  border-radius: 50%;
 }
 
 .filter__wrapper_title {
@@ -230,6 +252,7 @@ body {
   flex-direction: column;
   width: 308px;
   height: 394px;
+  padding-bottom: 50px;
 }
 
 .card__img {
@@ -239,6 +262,15 @@ body {
   background-size: cover;
   background-position: center;
   min-height: 200px;
+}
+.card__img_1 {
+  background-image: url("./../img/slider/x_ray.jpg");
+}
+.card__img_2 {
+  background-image: url("./../img/slider/lada.jpg");
+}
+.card__img_3 {
+  background-image: url("./../img/slider/vesta.jpg");
 }
 
 .card__title {
@@ -285,6 +317,7 @@ body {
   height: 4px;
   background: rgba(205, 205, 205, 0.4);
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .card__slide_item_active {
@@ -293,12 +326,61 @@ body {
 
 .card__slider {
   height: 273px;
+  width: 308px;
 }
 
 .card__descr {
   color: #848484;
   font-size: 18px;
   line-height: 22px;
+}
+
+.aside-filter {
+  padding-right: 20px;
+}
+
+.aside__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.select {
+  background: transparent;
+  border: 1px solid #BEBEBE;
+  border-radius: 2px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px;
+  margin: 6px 0;
+}
+
+.aside__price {
+  display: flex;
+}
+
+.aside__input {
+  width: 50%;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px;
+  border: 1px solid #BEBEBE;
+}
+
+.aside__jears {
+  display: flex;
+}
+
+.aside__input_popular {
+  display: flex;
+  margin-top: px;
+  justify-content: space-around;
+}
+.aside__input_popular > input {
+  height: 20px;
+  width: 20px;
 }
 
 .header {

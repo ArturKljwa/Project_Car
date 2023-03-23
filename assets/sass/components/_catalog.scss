@@ -37,6 +37,23 @@
     background-image: url('./../img/icons/like.svg');
 }
 .catalog__slider {
-display: flex;
-justify-content: space-between;
+    width: 972px;
+    padding-left: 16px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    }
+.catalog__slider_btn {
+    display: block;
+    background: rgba(4, 78, 244, 0.2);
+    background-image: url('./../img/icons/arow.svg');
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: -22px;
+    top: 33%;
+    border-radius: 50%;
+
 }

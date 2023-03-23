@@ -61,7 +61,7 @@
             <div class="breadcrumbs">
                 <div class="container">
                     <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__list-item">
+                        <li class="breadcrumbs__list-item breadcrumbs__list-item_active">
                             <a href="#">Главная</a>
                         </li>
                         <li class="breadcrumbs__list-item">
@@ -74,8 +74,48 @@
                 Каталог автомобилей
             </h2>
             <div class="catalog__wrapper layouts-2-columns-30-70">
-                <aside class="catalog__inner-aside">
+                <aside class="catalog__inner-aside aside-filter">
                     <p class="aside__title">Основные характеристики</p>
+
+                    <select id="Brand" class="select select__Brand">
+                        <option value="">Марка</option>
+                        <option value="option1">BMW</option>
+                        <option value="option2">Audi</option>
+                        <option value="option3">Lada</option>
+                    </select>
+                    <select id="Model" class="select select__Model" disabled>
+                        <option value="">Модель</option>
+                        <option value="option1"></option>
+                        <option value="option2"></option>
+                        <option value="option3"></option> -->
+                    </select>
+                    <select id="Generation" class="select select__Generation" disabled>
+                        <option value="">Поколение</option> -->
+                        <option value="option1">BMW</option>
+                        <option value="option2">Audi</option>
+                        <option value="option3">Lada</option>
+                    </select>
+                    <div class="aside__price">
+                        <input type="number" class="aside__input aside__input_min" placeholder="Цена от, ₽">
+                        <input type="number" class=" aside__input aside__input_max" placeholder="до">
+                    </div>
+
+
+                    <div class="aside__jears">
+                        <select id="jears-of" class="select select__jears-of">
+                            <option value="">Год от</option>
+                            <option value="option1">2022</option>
+                            <option value="option2">2021</option>
+                            <option value="option3">2020</option>
+                        </select>
+                        <select id="jears-before" class="select select__jears-before">
+                            <option value="">до</option>
+                            <option value="">2023</option>
+                        </select>
+                    </div>
+                    <label for="popular" class="aside__input aside__input_popular "> Популярность
+                        <input type="checkbox" checked id="popular">
+                    </label>
                 </aside>
                 <div class="catalog__inner-content">
                     <div class="catalog__filter">
@@ -141,8 +181,8 @@
                                     </svg>
                                 </button>
                             </div>
-                            <select name="" id="">
-                                <option value=""> По умолчанию</option>
+                            <select name="default" id="jears-before">
+                                <option value="2"> По умолчанию</option>
                             </select>
                         </div>
                     </div>
@@ -160,7 +200,8 @@
 
                             </div>
                             <h4 class="card__title">Kia Sorento Prime, 2020</h4>
-                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi nisl
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
                                 libero. Libero at ornare elementum non. </p>
                             <div class="card__prices">
                                 <button class=" button button_price">Подробнее</button>
@@ -185,7 +226,8 @@
 
                             </div>
                             <h4 class="card__title">Kia Sorento Prime, 2020</h4>
-                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi nisl
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
                                 libero. Libero at ornare elementum non. </p>
                             <div class="card__prices">
                                 <button class=" button button_price">Подробнее</button>
@@ -210,7 +252,8 @@
 
                             </div>
                             <h4 class="card__title">Kia Sorento Prime, 2020</h4>
-                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi nisl
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
                                 libero. Libero at ornare elementum non. </p>
                             <div class="card__prices">
                                 <button class=" button button_price">Подробнее</button>
@@ -235,7 +278,8 @@
 
                             </div>
                             <h4 class="card__title">Kia Sorento Prime, 2020</h4>
-                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi nisl
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
                                 libero. Libero at ornare elementum non. </p>
                             <div class="card__prices">
                                 <button class=" button button_price">Подробнее</button>
@@ -260,7 +304,8 @@
 
                             </div>
                             <h4 class="card__title">Kia Sorento Prime, 2020</h4>
-                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi nisl
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
                                 libero. Libero at ornare elementum non. </p>
                             <div class="card__prices">
                                 <button class=" button button_price">Подробнее</button>
@@ -285,7 +330,8 @@
 
                             </div>
                             <h4 class="card__title">Kia Sorento Prime, 2020</h4>
-                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi nisl
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
                                 libero. Libero at ornare elementum non. </p>
                             <div class="card__prices">
                                 <button class=" button button_price">Подробнее</button>
@@ -310,7 +356,8 @@
 
                             </div>
                             <h4 class="card__title">Kia Sorento Prime, 2020</h4>
-                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi nisl
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
                                 libero. Libero at ornare elementum non. </p>
                             <div class="card__prices">
                                 <button class=" button button_price">Подробнее</button>
@@ -335,7 +382,8 @@
 
                             </div>
                             <h4 class="card__title">Kia Sorento Prime, 2020</h4>
-                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi nisl
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
                                 libero. Libero at ornare elementum non. </p>
                             <div class="card__prices">
                                 <button class=" button button_price">Подробнее</button>
@@ -360,7 +408,8 @@
 
                             </div>
                             <h4 class="card__title">Kia Sorento Prime, 2020</h4>
-                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi nisl
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
                                 libero. Libero at ornare elementum non. </p>
                             <div class="card__prices">
                                 <button class=" button button_price">Подробнее</button>
@@ -385,7 +434,8 @@
 
                             </div>
                             <h4 class="card__title">Kia Sorento Prime, 2020</h4>
-                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi nisl
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
                                 libero. Libero at ornare elementum non. </p>
                             <div class="card__prices">
                                 <button class=" button button_price">Подробнее</button>
@@ -410,7 +460,8 @@
 
                             </div>
                             <h4 class="card__title">Kia Sorento Prime, 2020</h4>
-                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi nisl
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
                                 libero. Libero at ornare elementum non. </p>
                             <div class="card__prices">
                                 <button class=" button button_price">Подробнее</button>
@@ -435,7 +486,8 @@
 
                             </div>
                             <h4 class="card__title">Kia Sorento Prime, 2020</h4>
-                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi nisl
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
                                 libero. Libero at ornare elementum non. </p>
                             <div class="card__prices">
                                 <button class=" button button_price">Подробнее</button>
@@ -460,7 +512,8 @@
 
                             </div>
                             <h4 class="card__title">Kia Sorento Prime, 2020</h4>
-                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi nisl
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
                                 libero. Libero at ornare elementum non. </p>
                             <div class="card__prices">
                                 <button class=" button button_price">Подробнее</button>
@@ -485,7 +538,8 @@
 
                             </div>
                             <h4 class="card__title">Kia Sorento Prime, 2020</h4>
-                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi nisl
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
                                 libero. Libero at ornare elementum non. </p>
                             <div class="card__prices">
                                 <button class=" button button_price">Подробнее</button>
@@ -510,7 +564,8 @@
 
                             </div>
                             <h4 class="card__title">Kia Sorento Prime, 2020</h4>
-                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi nisl
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
                                 libero. Libero at ornare elementum non. </p>
                             <div class="card__prices">
                                 <button class=" button button_price">Подробнее</button>
@@ -526,8 +581,9 @@
                     </div>
                     <h2 class="catalog__title_slider">Лучшие предложения</h2>
                     <div class="catalog__slider">
-                        <div class="card card__slider">
-                            <div class="card__img">
+                        <button class="button catalog__slider_btn"></button>
+                        <div class="card__slider">
+                            <div class="card__img card__img_1">
                             </div>
                             <h4 class="card__title">BMW 5 серии</h4>
                             <div class="card__prices">
@@ -537,8 +593,8 @@
                                 <p class="card__price">2 500 300 ₽</p>
                             </div>
                         </div>
-                        <div class="card card__slider">
-                            <div class="card__img">
+                        <div class="card__slider">
+                            <div class="card__img card__img_2">
                             </div>
                             <h4 class="card__title">BMW 5 серии</h4>
                             <div class="card__prices">
@@ -548,8 +604,8 @@
                                 <p class="card__price">2 500 300 ₽</p>
                             </div>
                         </div>
-                        <div class="card card__slider">
-                            <div class="card__img">
+                        <div class="card__slider">
+                            <div class="card__img card__img_3">
                             </div>
                             <h4 class="card__title">BMW 5 серии</h4>
                             <div class="card__prices">
@@ -559,8 +615,165 @@
                                 <p class="card__price">2 500 300 ₽</p>
                             </div>
                         </div>
+                    </div>
 
+                    <div class="catalog__content">
+                        <div class="card">
+                            <div class="card__img">
+                                <div class="card__slide">
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item card__slide_item_active"></span>
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item"></span>
+                                </div>
 
+                            </div>
+                            <h4 class="card__title">Kia Sorento Prime, 2020</h4>
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
+                                libero. Libero at ornare elementum non. </p>
+                            <div class="card__prices">
+                                <button class=" button button_price">Подробнее</button>
+                                <p class="card__price">2 500 300 ₽</p>
+                            </div>
+                            <div class="card__prices-city">
+                                <button class=" button button__city button__city_active">Цена в Москве
+                                </button>
+                                <button class=" button button__city">Цена в Минске</button>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <div class="card__slide">
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item card__slide_item_active"></span>
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item"></span>
+                                </div>
+
+                            </div>
+                            <h4 class="card__title">Kia Sorento Prime, 2020</h4>
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
+                                libero. Libero at ornare elementum non. </p>
+                            <div class="card__prices">
+                                <button class=" button button_price">Подробнее</button>
+                                <p class="card__price">2 500 300 ₽</p>
+                            </div>
+                            <div class="card__prices-city">
+                                <button class=" button button__city button__city_active">Цена в Москве
+                                </button>
+                                <button class=" button button__city">Цена в Минске</button>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <div class="card__slide">
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item card__slide_item_active"></span>
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item"></span>
+                                </div>
+
+                            </div>
+                            <h4 class="card__title">Kia Sorento Prime, 2020</h4>
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
+                                libero. Libero at ornare elementum non. </p>
+                            <div class="card__prices">
+                                <button class=" button button_price">Подробнее</button>
+                                <p class="card__price">2 500 300 ₽</p>
+                            </div>
+                            <div class="card__prices-city">
+                                <button class=" button button__city button__city_active">Цена в Москве
+                                </button>
+                                <button class=" button button__city">Цена в Минске</button>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <div class="card__slide">
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item card__slide_item_active"></span>
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item"></span>
+                                </div>
+
+                            </div>
+                            <h4 class="card__title">Kia Sorento Prime, 2020</h4>
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
+                                libero. Libero at ornare elementum non. </p>
+                            <div class="card__prices">
+                                <button class=" button button_price">Подробнее</button>
+                                <p class="card__price">2 500 300 ₽</p>
+                            </div>
+                            <div class="card__prices-city">
+                                <button class=" button button__city button__city_active">Цена в Москве
+                                </button>
+                                <button class=" button button__city">Цена в Минске</button>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <div class="card__slide">
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item card__slide_item_active"></span>
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item"></span>
+                                </div>
+
+                            </div>
+                            <h4 class="card__title">Kia Sorento Prime, 2020</h4>
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
+                                libero. Libero at ornare elementum non. </p>
+                            <div class="card__prices">
+                                <button class=" button button_price">Подробнее</button>
+                                <p class="card__price">2 500 300 ₽</p>
+                            </div>
+                            <div class="card__prices-city">
+                                <button class=" button button__city button__city_active">Цена в Москве
+                                </button>
+                                <button class=" button button__city">Цена в Минске</button>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <div class="card__slide">
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item card__slide_item_active"></span>
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item"></span>
+                                    <span class="card__slide_item"></span>
+                                </div>
+
+                            </div>
+                            <h4 class="card__title">Kia Sorento Prime, 2020</h4>
+                            <p class="card__text"> Lorem ipsum dolor sit amet consectetur. Massa risus risus nisi
+                                nisl
+                                libero. Libero at ornare elementum non. </p>
+                            <div class="card__prices">
+                                <button class=" button button_price">Подробнее</button>
+                                <p class="card__price">2 500 300 ₽</p>
+                            </div>
+                            <div class="card__prices-city">
+                                <button class=" button button__city button__city_active">Цена в Москве
+                                </button>
+                                <button class=" button button__city">Цена в Минске</button>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
     </section>
