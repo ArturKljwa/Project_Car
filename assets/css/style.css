@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 html {
   font-size: 10px;
 }
@@ -33,6 +38,84 @@ body {
   background-image: url("./../img/icons/youtube.svg");
 }
 
+.breadcrumbs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumbs__list-item {
+  display: inline-block;
+  text-decoration: none;
+  padding-right: 25px;
+  margin-right: 5px;
+  position: relative;
+  font-family: "Tilda Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7F8187;
+}
+.breadcrumbs__list-item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 6px;
+  background-image: url("./../img/icons/arrows.svg");
+  width: 20px;
+  height: 6px;
+}
+.breadcrumbs__list-item:last-child::after {
+  display: none;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.content__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.button_show {
+  background: transparent;
+  font-family: "Tilda Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.button_price {
+  font-size: 16px;
+  line-height: 19px;
+  color: #848484;
+}
+
+.button__city {
+  width: 50%;
+  font-size: 14px;
+  line-height: 17px;
+  border: 1px solid #BEBEBE;
+}
+
+.button__city_active {
+  font-weight: 500;
+  border: 2px solid #044EF4;
+}
+
 .navigation {
   display: flex;
   max-width: 720px;
@@ -56,6 +139,168 @@ body {
   border-bottom: 1px solid #ffffff;
 }
 
+.catalog {
+  padding-top: 27px;
+  background-image: url("./../img/top_background.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.catalog__inner-aside {
+  width: 24%;
+}
+
+.catalog__inner-content {
+  width: 76%;
+}
+
+.catalog__content {
+  padding-left: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog__title_slider {
+  margin-top: 43px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  position: relative;
+  padding-left: 32px;
+}
+
+.catalog__title_slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("./../img/icons/like.svg");
+}
+
+.catalog__slider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__wrapper_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__car {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.filter__car_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.filter__car .car__item_title {
+  font-size: 18px;
+  line-height: 22px;
+  color: #044EF4;
+}
+.filter__car .car__item_number {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.filter__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.car__item_dotted {
+  display: inline-block;
+  width: 90%;
+  height: 55%;
+  border-bottom: 1px dotted;
+}
+
+.card {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 308px;
+  height: 394px;
+}
+
+.card__img {
+  border-radius: 10px;
+  background-image: url("./../img/catalog_car/card_1/lada_vesta_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+}
+
+.card__title {
+  margin: 0;
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.card__text {
+  margin: 0;
+  margin-top: 6px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.card__prices {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.card__prices-city {
+  display: flex;
+}
+
+.card__slide {
+  margin: 0 auto;
+  width: 220px;
+  margin-top: 164px;
+}
+
+.card__slide_item {
+  display: inline-flex;
+  width: 40px;
+  height: 4px;
+  background: rgba(205, 205, 205, 0.4);
+  border-radius: 10px;
+}
+
+.card__slide_item_active {
+  background-color: #044EF4;
+}
+
+.card__slider {
+  height: 273px;
+}
+
+.card__descr {
+  color: #848484;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 .header {
   background-color: #044EF4;
 }
@@ -76,6 +321,11 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1280px;
+}
+
+.layouts-2-columns-30-70 {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

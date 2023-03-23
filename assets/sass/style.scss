@@ -5,10 +5,17 @@
 @import "base/base";
 @import "base/phone";
 @import "base/icon";
+@import "base/breadcrumbs";
+@import "base/title";
+@import "base/buttons";
 
 //components
 @import "components/navigation";
+@import "components/catalog";
+@import "components/filter";
+@import "components/card";
 
 //layouts
 @import "layouts/header";
 @import "layouts/container";
+@import "layouts/columns";

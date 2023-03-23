@@ -1,0 +1,29 @@
+.button {
+border: none;
+background: transparent;
+cursor: pointer;
+
+}
+.button_show {
+    background: transparent;
+    font-family: 'Tilda Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.button_price {
+    font-size: 16px;
+    line-height: 19px;
+    color: #848484;
+}
+.button__city {
+    width: 50%;
+    font-size: 14px;
+    line-height: 17px;
+    border: 1px solid $color-border;
+}
+.button__city_active {
+    font-weight: 500;
+    border: 2px solid $color-primary;
+}

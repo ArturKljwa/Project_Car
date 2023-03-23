@@ -1,0 +1,32 @@
+.breadcrumbs {
+&__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    &-item {
+        display: inline-block;
+        text-decoration: none;
+        padding-right: 25px;
+        margin-right: 5px;
+        position: relative;
+        font-family: 'Tilda Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #7F8187;
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 6px;
+            background-image: url('./../img/icons/arrows.svg');
+            width: 20px;
+            height: 6px;
+        }
+        &:last-child::after {
+            display: none;
+        }
+    }
+}
+}
