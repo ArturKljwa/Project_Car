@@ -527,6 +527,28 @@ body {
   color: #FFFFFF;
   padding-left: 32px;
   padding-top: 29px;
+  position: relative;
+}
+.contacts__title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 24px;
+  left: 35px;
+  background-color: #FFFFFF;
+  width: 40px;
+  height: 5px;
+}
+.contacts__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  background: #393B40;
+  border-radius: 0px 2px 2px 0px;
+  width: 10px;
+  height: 42px;
 }
 
 .contacts__descr {
@@ -599,6 +621,21 @@ body {
   padding: 15px 20px;
   border: 1px solid #C2C4CC;
   border-radius: 5px;
+}
+
+.contacts__adress_line {
+  position: relative;
+}
+
+.contacts__adress_line::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 2px;
+  top: 15px;
+  left: -100px;
+  background-color: #044EF4;
 }
 
 .header {

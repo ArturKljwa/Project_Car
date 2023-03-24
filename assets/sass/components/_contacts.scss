@@ -33,8 +33,30 @@ right: 0;
     color: $color-additional;
     padding-left: 32px;
     padding-top: 29px;
-
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 24px;
+        left: 35px;
+        background-color: $color-additional;
+        width: 40px;
+        height: 5px;
+    }
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: -10px;
+        background: #393B40;
+        border-radius: 0px 2px 2px 0px;
+        width: 10px;
+        height:42px;
+    }
 }
+
 
 .contacts__descr {
     margin-top: 32px;
@@ -104,4 +126,17 @@ right: 0;
         border-radius: 5px;
     }
 
+}
+.contacts__adress_line {
+    position: relative;
+}
+.contacts__adress_line::after {
+content: '';
+    position: absolute;
+display: block;
+width: 35px;
+height: 2px;
+top: 15px;
+left: -100px;
+background-color: $color-primary;
 }
