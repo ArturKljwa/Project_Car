@@ -638,6 +638,19 @@ body {
   background-color: #044EF4;
 }
 
+.car {
+  padding-top: 23px;
+}
+
+.car__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.car__header_price {
+  display: flex;
+}
+
 .header {
   background-color: #044EF4;
 }
