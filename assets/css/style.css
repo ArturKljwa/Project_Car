@@ -132,6 +132,29 @@ body {
   padding: 9px 0;
 }
 
+.button_pages {
+  padding: 7px 26px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.button_pages-list {
+  background: #044EF4;
+  color: #FFFFFF;
+  margin-right: 94px;
+}
+
+.button_pages-back {
+  border: 1px solid #BEBEBE;
+  border-radius: 2px;
+  color: #BEBEBE;
+  margin-right: 48px;
+}
+
+.button_pages-next {
+  border: 1px solid #044EF4;
+}
+
 .navigation {
   display: flex;
   max-width: 720px;
@@ -161,6 +184,7 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: auto;
+  padding-bottom: 45px;
 }
 
 .catalog__inner-aside {
@@ -179,12 +203,12 @@ body {
 }
 
 .catalog__title_slider {
-  margin-top: 43px;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   position: relative;
   padding-left: 32px;
+  margin-bottom: 27px;
 }
 
 .catalog__title_slider::before {
@@ -203,6 +227,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
+  margin-bottom: 44px;
 }
 
 .catalog__slider_btn {
@@ -219,6 +244,42 @@ body {
   border-radius: 50%;
 }
 
+.catalog__pages-list {
+  display: flex;
+}
+
+.catalog__wrapper_pages {
+  width: 300px;
+}
+
+.catalog__pages_dotted {
+  display: inline-block;
+  width: 5%;
+  height: 55%;
+  border-bottom: 1px dotted;
+  margin-right: 12px;
+}
+
+.catalog__pages_item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  width: 24px;
+  height: 24px;
+}
+
+.catalog__pages_item_active {
+  border-radius: 50%;
+  background-color: rgba(4, 78, 244, 0.2);
+}
+
+.catalog__pages_item:last-child {
+  margin-right: 48px;
+}
+
 .filter__wrapper_title {
   display: flex;
   justify-content: space-between;
@@ -228,6 +289,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+  margin-bottom: 40px;
 }
 .filter__car_item {
   display: flex;
@@ -244,6 +306,15 @@ body {
   line-height: 22px;
 }
 
+.filter__inner_default {
+  background: transparent;
+  border: 1px solid #BEBEBE;
+  width: 160px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
 .filter__inner {
   display: flex;
   justify-content: space-between;
@@ -257,13 +328,12 @@ body {
 }
 
 .card {
-  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   width: 308px;
   height: 394px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .card__img {
@@ -386,7 +456,7 @@ body {
 
 .aside__input_popular {
   display: flex;
-  margin-top: px;
+  width: 100%;
   justify-content: space-around;
 }
 .aside__input_popular > input {

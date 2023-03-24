@@ -38,3 +38,25 @@ cursor: pointer;
     color: #FFFFFF;
     padding: 9px 0;
 }
+.button_pages {
+    padding: 7px 26px;
+    font-size: 14px;
+    line-height: 17px;
+}
+.button_pages-list {
+    background: $color-primary;
+    color: $color-additional;
+    margin-right: 94px;
+
+}
+.button_pages-back {
+    border: 1px solid $color-border;
+    border-radius: 2px;
+    color: $color-border;
+    margin-right: 48px;
+
+
+}
+.button_pages-next {
+    border: 1px solid $color-primary;
+}
