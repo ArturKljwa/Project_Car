@@ -93,6 +93,7 @@ body {
   border: none;
   background: transparent;
   cursor: pointer;
+  font-family: "Tilda Sans", sans-serif;
 }
 
 .button_show {
@@ -170,6 +171,87 @@ body {
   color: #FFFFFF;
 }
 
+.button_price-city {
+  font-size: 14px;
+  line-height: 17px;
+  color: #D9D9D9;
+}
+
+.button_price-city-active {
+  color: #FF0000;
+}
+
+.button_price {
+  margin-top: 4px;
+  color: #044EF4;
+}
+
+.button_feature {
+  margin-top: 32px;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+  color: #848484;
+}
+
+.button__descr {
+  padding: 13px 0;
+  width: 416px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.button__descr_call {
+  margin-top: 16px;
+  color: #FFFFFF;
+  background-color: #044EF4;
+  margin-bottom: 7px;
+}
+
+.button__descr_request {
+  border: 2px solid #044EF4;
+}
+
+.button__main_descr {
+  padding-right: 20px;
+  font-size: 20px;
+  line-height: 24px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.button__main_descr::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 3px;
+  right: 0;
+  width: 1px;
+  height: 20px;
+  background-color: #044EF4;
+}
+
+.button__main_descr_active {
+  font-weight: 700;
+}
+
+.button__main_descr:before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 3px;
+  left: -24px;
+  width: 1px;
+  height: 20px;
+  background-color: #044EF4;
+}
+
+.button__descr_text {
+  color: #BEBEBE;
+  font-size: 14px;
+  line-height: 17px;
+}
+
 .navigation {
   display: flex;
   max-width: 720px;
@@ -241,7 +323,6 @@ body {
 }
 
 .catalog__slider {
-  width: 972px;
   padding-left: 16px;
   display: flex;
   justify-content: space-between;
@@ -646,9 +727,151 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.car__header_title {
+  margin-top: 28px;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.car__header_price-city {
+  margin-right: 16px;
+  margin-top: 25px;
+}
+
+.car__header_subtitle {
+  display: flex;
+  font-size: 20px;
+  line-height: 24px;
+  color: #BEBEBE;
+  margin-bottom: 24px;
+  margin-top: 4px;
+}
+
+.car__header_subtitle p {
+  margin-right: 34px;
+}
 
 .car__header_price {
   display: flex;
+}
+
+.car__main {
+  display: flex;
+}
+
+.car__main_img {
+  margin-right: 16px;
+  display: grid;
+  width: 850px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.img__item-main {
+  width: 630px;
+  height: 400px;
+  grid-row: 1/4;
+  grid-column: 1/4;
+}
+
+.car__header_price_text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.car__wrapper_price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.car__header_slash {
+  font-size: 14px;
+}
+
+.car__descr {
+  width: 30%;
+}
+
+.car__descr_title h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.car__descr_list {
+  margin-top: 16px;
+}
+
+.car__descr_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px 0;
+}
+
+.car__descr_item_title {
+  font-size: 20px;
+  line-height: 24px;
+  color: #7F8187;
+}
+
+.car__descr_item_subtitle {
+  width: 200px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.car__descr_title_feature {
+  margin-top: 24px;
+}
+
+.car__main_content {
+  padding-bottom: 17px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.car__main_descr_title {
+  margin-top: 36px;
+}
+
+.car__main_descr_text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.car__main_descr_btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.similar {
+  padding-top: 36px;
+  padding-bottom: 80px;
+}
+
+.similar__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  position: relative;
+}
+
+.similar__title:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 3px;
+  left: -25px;
+  background-image: url("./../img/icons/suqare.svg");
 }
 
 .header {

@@ -1,0 +1,21 @@
+.similar {
+padding-top: 36px;
+padding-bottom: 80px;
+}
+.similar__title {
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    position: relative;
+}
+.similar__title:before {
+content: '';
+display: block;
+width: 24px;
+height: 24px;
+position: absolute;
+top: 3px;
+left: -25px;
+background-image: url('./../img/icons/suqare.svg');
+}

@@ -4,7 +4,110 @@
 .car__header {
     display: flex;
     justify-content: space-between;
+    &_title {
+        margin-top: 28px;
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+.car__header_price-city{
+    margin-right: 16px;
+    margin-top: 25px;
+}
+.car__header_subtitle {
+    display: flex;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color_border;
+    margin-bottom: 24px;
+    margin-top: 4px;
+
+}
+.car__header_subtitle p {
+    margin-right: 34px;
 }
 .car__header_price {
     display: flex;
+}
+.car__main {
+    display: flex;
+
+}
+.car__main_img {
+    margin-right: 16px;
+    display: grid;
+    width: 850px;
+    grid-template-columns:  repeat(4, 1fr);
+    grid-template-rows:repeat(4, 1fr);
+    gap: 5px;
+}
+.img__item-main {
+    width: 630px;
+    height: 400px;
+    grid-row: 1/4;
+    grid-column: 1/4;
+}
+.car__header_price_text {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+.car__wrapper_price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.car__header_slash {
+    font-size: 14px;
+}
+.car__descr {
+    width: 30%;
+}
+.car__descr_title h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.car__descr_list {
+    margin-top: 16px;
+}
+.car__descr_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 0;
+
+}
+.car__descr_item_title {
+    font-size: 20px;
+    line-height: 24px;
+    color: #7F8187;
+}
+.car__descr_item_subtitle {
+    width: 200px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.car__descr_title_feature {
+    margin-top: 24px;
+}
+.car__main_content {
+    padding-bottom: 17px;
+    border-bottom: 1px solid  #D9D9D9;
+}
+.car__main_descr_title {
+    margin-top: 36px;
+}
+.car__main_descr_text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.car__main_descr_btn {
+    display: flex;
+    justify-content: flex-end;
 }

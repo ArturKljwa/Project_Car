@@ -345,4 +345,5 @@ h4,
 h5,
 h6 {
     white-space: nowrap;
+    font-weight: inherit;
 }

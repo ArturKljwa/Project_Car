@@ -2,6 +2,7 @@
 border: none;
 background: transparent;
 cursor: pointer;
+font-family: "Tilda Sans", sans-serif;
 
 }
 .button_show {
@@ -72,4 +73,74 @@ margin-top: 45px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     border-radius: 2px;
     color: $color-additional;
+}
+.button_price-city {
+    font-size: 14px;
+    line-height: 17px;
+    color: #D9D9D9;
+}
+.button_price-city-active {
+    color: #FF0000;
+}
+.button_price {
+    margin-top: 4px;
+   color: $color-primary;
+}
+.button_feature {
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+    color: #848484;
+    }
+.button__descr {
+
+    padding: 13px 0;
+    width: 416px;
+    font-size: 24px;
+    line-height: 29px;
+}
+.button__descr_call {
+    margin-top: 16px;
+    color: #FFFFFF;
+    background-color: $color-primary;
+    margin-bottom: 7px;
+}
+.button__descr_request {
+    border: 2px solid $color-primary;
+}
+.button__main_descr {
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 20px;
+    position: relative;
+}
+.button__main_descr::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 3px;
+    right: 0;
+    width: 1px;
+    height: 20px;
+    background-color: $color-primary;
+}
+.button__main_descr_active {
+font-weight: 700;
+}
+.button__main_descr:before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 3px;
+    left: -24px;
+    width: 1px;
+    height: 20px;
+    background-color: $color-primary;
+}
+.button__descr_text {
+    color: $color_border;
+    font-size: 14px;
+    line-height: 17px
 }
