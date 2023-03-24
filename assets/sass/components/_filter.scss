@@ -3,6 +3,7 @@
     justify-content: space-between;
 }
 .filter__car {
+    margin-top: 28px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
@@ -36,7 +37,7 @@
 .filter__inner {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .car__item_dotted {
 

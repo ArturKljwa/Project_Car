@@ -18,6 +18,7 @@ cursor: pointer;
     color: #848484;
 }
 .button__city {
+    padding: 4px;
     width: 50%;
     font-size: 14px;
     line-height: 17px;
@@ -59,4 +60,16 @@ cursor: pointer;
 }
 .button_pages-next {
     border: 1px solid $color-primary;
+}
+.button_call {
+    margin: 0 auto;
+    max-width: 200px;
+    font-size: 19px;
+    line-height: 23px;
+margin-top: 45px;
+    padding: 13px 60px;
+    background: #FF0000;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    color: $color-additional;
 }

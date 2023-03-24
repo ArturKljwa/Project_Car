@@ -3,8 +3,9 @@
     justify-content: space-between;
     flex-direction: column;
     width: 308px;
-    height: 394px;
+    height: 410px;
     padding-bottom: 40px;
+    margin: 20px 0;
 
 }
 .card__img {
@@ -39,6 +40,7 @@
     line-height: 22px;
 }
 .card__prices {
+    padding: 12px 0 16px 0;
     display: flex;
     justify-content: space-between;
 }
