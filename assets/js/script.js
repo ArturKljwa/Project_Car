@@ -23,7 +23,7 @@ function open (evt) {
 }
 
 // Hamburger
-window.addEventListener('DOMContentLoaded', () => {
+
     const menu = document.querySelector('.navigation-mobile'),
     menuItem = document.querySelectorAll('.navigation-mobile__item'),
     hamburger = document.querySelector('.hamburger');
@@ -39,5 +39,5 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.toggle('navigation-mobile_active');
         })
     })
-})
+
 

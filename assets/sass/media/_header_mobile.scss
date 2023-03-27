@@ -11,6 +11,7 @@
         border-radius: 20px;
     }
     &_active {
+        position: fixed;
         left: 250px;
         z-index: 2;
     span {
@@ -49,7 +50,8 @@
 }
 
 .navigation-mobile {
-position: absolute;
+position: fixed;
+
 flex-direction: column;
 align-items: center;
 justify-content: center;
