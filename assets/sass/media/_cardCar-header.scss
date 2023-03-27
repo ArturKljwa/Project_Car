@@ -1,0 +1,28 @@
+@media(max-width: 320px) {
+    .car {
+        display: none;
+    }
+    .similar {
+        display: none;
+    }
+    .header__container_cardCar {
+        justify-content: flex-start;
+        column-gap: 8px;
+    }
+.header-mobile-cardCar__content {
+    display: block;
+}
+.card_car__header_title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.card_car__header_subtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+}

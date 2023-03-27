@@ -1,0 +1,135 @@
+@media(max-width: 321px) {
+.car-mobile {
+    display: block;
+}
+// .car-mobile__content {
+//     display: flex;
+//     flex-direction: column;
+// }
+.car-mobile__btn {
+    margin-top: 16px;
+    display: flex;
+}
+.car-mobile__header_price {
+    margin-top: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.car-mobile__header_title {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.car-mobile__header_subtitle {
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #848484;
+
+}
+.car-mobile__descr {
+    margin-top: 16px;
+}
+.car-mobile__descr_item {
+    margin: 2px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_title {
+        font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #7F8187;
+    }
+    &_subtitle {
+        width: 170px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+}
+.car-mobile__descr_btn {
+    display: flex;
+    margin-top: 16px;
+}
+.car-mobile__descr_button {
+background-color:transparent;
+    display: block;
+    width: 50%;
+    padding: 7px 0;
+    font-family: 'Tilda Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    border: 1px solid #BEBEBE;
+    border-radius: 2px;
+    &_active {
+        color: $color-additional;
+        background-color: $color-primary;
+        border: 1px solid $color-primary;
+    }
+}
+.car-mobile__text {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+}
+.car-mobile__similar {
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 2px rgba(5, 18, 50, 0.1);
+    border-radius: 10px;
+
+    }
+    .car-mobile__similar_descr {
+        padding: 0px 10px;
+    }
+.car-mobile__similar_title {
+    margin-top: 28px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.car-mobile__similar_img {
+    border-radius: 10px;
+    background-image: url('./../img/slider/x_ray.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    min-height: 200px;
+}
+.car-mobile__descr_title {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+.car-mobile__descr_subtitle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.car-mobile__descr_text {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #848484;
+    }
+    .car-mobile__descr_price {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

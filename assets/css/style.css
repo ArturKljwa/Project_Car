@@ -866,6 +866,10 @@ body {
   justify-content: flex-end;
 }
 
+.car-mobile {
+  display: none;
+}
+
 .similar {
   padding-top: 36px;
   padding-bottom: 80px;
@@ -988,127 +992,107 @@ body {
   .catalog-mobile {
     display: block;
   }
+  .catalog-mobile__choice {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px 1px rgba(5, 11, 24, 0.1);
+    border-radius: 5px;
+    margin-bottom: 25px;
+  }
+  .catalog-mobile__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .catalog-mobile__filter_model {
+    border-bottom: 1px solid #BEBEBE;
+    border-radius: 10px;
+  }
+  .catalog-mobile__filter_model:last-child {
+    border: none;
+  }
+  .catalog-mobile__filter_model_title {
+    margin-left: 12px;
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #848484;
+  }
+  .catalog-mobile__selected {
+    display: flex;
+    column-gap: 9px;
+    flex-wrap: wrap;
+  }
+  .catalog-mobile__selected_item {
+    width: 82px;
+    height: 20px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    background: #044EF4;
+    border-radius: 2px;
+    padding: 4px;
+    color: #FFFFFF;
+    position: relative;
+  }
+  .catalog-mobile__selected_item::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-image: url("./../img/icons/close.svg");
+    background-color: rgba(255, 255, 255, 0.2);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    border-radius: 50%;
+    top: 4px;
+    right: 5px;
+  }
+  .catalog-mobile__title {
+    margin-top: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .catalog-mobile__content_item {
+    margin: 60px 0;
+  }
+  .catalog-mobile__content_item:first-child {
+    margin-top: 10px;
+  }
+  .catalog-mobile__content_item:last-child {
+    margin-bottom: 20px;
+  }
+  .catalog-mobile__content_title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 4px;
+  }
+  .catalog-mobile__content_subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+  .catalog-mobile__descr {
+    display: flex;
+  }
+  .catalog-mobile__descr_wrapper {
+    width: 50%;
+    margin-top: 12px;
+  }
+  .catalog-mobile__descr_item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #7F8187;
+    margin-bottom: 4px;
+  }
 }
-.catalog-mobile__choice {
-  background: #FFFFFF;
-  box-shadow: 0px 1px 5px 1px rgba(5, 11, 24, 0.1);
-  border-radius: 5px;
-  margin-bottom: 25px;
-}
-
-.catalog-mobile__container {
-  display: flex;
-  flex-direction: column;
-}
-
-.catalog-mobile__filter_model {
-  border-bottom: 1px solid #BEBEBE;
-  border-radius: 10px;
-}
-.catalog-mobile__filter_model:last-child {
-  border: none;
-}
-.catalog-mobile__filter_model_title {
-  margin-left: 12px;
-  margin-top: 8px;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 12px;
-  color: #848484;
-}
-
-.catalog-mobile__selected {
-  display: flex;
-  column-gap: 9px;
-  flex-wrap: wrap;
-}
-
-.catalog-mobile__selected_item {
-  width: 82px;
-  height: 20px;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 12px;
-  background: #044EF4;
-  border-radius: 2px;
-  padding: 4px;
-  color: #FFFFFF;
-  position: relative;
-}
-
-.catalog-mobile__selected_item::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 13px;
-  height: 13px;
-  background-image: url("./../img/icons/close.svg");
-  background-color: rgba(255, 255, 255, 0.2);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-  border-radius: 50%;
-  top: 4px;
-  right: 5px;
-}
-
-.catalog-mobile__title {
-  margin-top: 24px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  margin-bottom: 20px;
-}
-
-.catalog-mobile__content_item {
-  margin: 14px 0;
-}
-
-.catalog-mobile__content_title {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  margin-bottom: 4px;
-}
-
-.catalog-mobile__content_subtitle {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  margin-bottom: 12px;
-}
-
-.catalog-mobile__descr {
-  display: flex;
-}
-
-.catalog-mobile__descr_wrapper {
-  width: 50%;
-  margin-top: 12px;
-}
-
-.catalog-mobile__descr_item {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #7F8187;
-  margin-bottom: 4px;
-}
-
-.button-mobile_show-more {
-  display: block;
-  width: 100%;
-  color: #FFFFFF;
-  border: none;
-  padding: 20px 0;
-  background-color: #FF0000;
-  border-radius: 10px 10px 0px 0px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-}
-
 @media (max-width: 321px) {
   .contacts {
     display: none;
@@ -1119,83 +1103,300 @@ body {
     display: none;
   }
 }
-.button-mobile {
-  font-weight: 500;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  font-family: "Tilda Sans", sans-serif;
-  width: 300px;
-  display: block;
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #BEBEBE;
-  border-radius: 10px;
+@media (max-width: 320px) {
+  .button-mobile {
+    font-weight: 500;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: "Tilda Sans", sans-serif;
+    width: 300px;
+    display: block;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #BEBEBE;
+    border-radius: 10px;
+  }
+  .button-mobile_choice {
+    position: relative;
+  }
+  .button-mobile_choice::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("./../img/icons/car.svg");
+    top: 8px;
+    right: 14px;
+  }
+  .button-mobile_options {
+    position: relative;
+  }
+  .button-mobile_options::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("./../img/icons/setting.svg");
+    top: 8px;
+    right: 14px;
+  }
+  .button-mobile_model {
+    padding: 3px 12px 5px 12px;
+    position: relative;
+  }
+  .button-mobile_model::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("./../img/icons/close.svg");
+    background-color: rgba(4, 78, 244, 0.2);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    border-radius: 50%;
+    top: -6px;
+    right: 14px;
+  }
+  .button-mobile_descr {
+    text-align: center;
+    margin-top: 23px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    border: 1px solid #848484;
+    border-radius: 1px;
+  }
+  .button-mobile_descr_active {
+    font-weight: 500;
+    border: 1px solid #044EF4;
+    border-radius: 1px 0px 0px 1px;
+  }
+  .button_arrow {
+    background: transparent;
+    cursor: pointer;
+    font-family: "Tilda Sans", sans-serif;
+    border: none;
+  }
+  .button_arrow_item {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("./../img/icons/arrowleft.svg");
+  }
+  .button_car-mobile {
+    display: block;
+    width: 50%;
+    border: 1px solid #848484;
+    border-radius: 0;
+  }
+  .button_car-mobile_active {
+    font-weight: 500;
+    border: 1px solid #044EF4;
+    border-radius: 0;
+  }
+  .button-mobile_show-more {
+    display: block;
+    width: 100%;
+    color: #FFFFFF;
+    border: none;
+    padding: 20px 0;
+    background-color: #FF0000;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .car-mobile_button_request {
+    font-family: "Tilda Sans";
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid #044EF4;
+    padding: 10px 0;
+    margin-top: 4px;
+    background-color: transparent;
+  }
+  .car-mobile_button_call {
+    font-family: "Tilda Sans";
+    display: block;
+    width: 100%;
+    background: #FF0000;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 0;
+    margin-top: 30px;
+  }
 }
-
-.button-mobile_choice {
-  position: relative;
+@media (max-width: 320px) {
+  .car {
+    display: none;
+  }
+  .similar {
+    display: none;
+  }
+  .header__container_cardCar {
+    justify-content: flex-start;
+    column-gap: 8px;
+  }
+  .header-mobile-cardCar__content {
+    display: block;
+  }
+  .card_car__header_title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+  }
+  .card_car__header_subtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
 }
-.button-mobile_choice::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-image: url("./../img/icons/car.svg");
-  top: 8px;
-  right: 14px;
-}
-
-.button-mobile_options {
-  position: relative;
-}
-.button-mobile_options::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-image: url("./../img/icons/setting.svg");
-  top: 8px;
-  right: 14px;
-}
-
-.button-mobile_model {
-  padding: 3px 12px 5px 12px;
-  position: relative;
-}
-
-.button-mobile_model::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url("./../img/icons/close.svg");
-  background-color: rgba(4, 78, 244, 0.2);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-  border-radius: 50%;
-  top: -6px;
-  right: 14px;
-}
-
-.button-mobile_descr {
-  margin-top: 23px;
-  width: 100%;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  border: 1px solid #848484;
-  border-radius: 1px;
-}
-.button-mobile_descr_active {
-  font-weight: 500;
-  border: 2px solid #044EF4;
-  border-radius: 1px 0px 0px 1px;
+@media (max-width: 321px) {
+  .car-mobile {
+    display: block;
+  }
+  .car-mobile__btn {
+    margin-top: 16px;
+    display: flex;
+  }
+  .car-mobile__header_price {
+    margin-top: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .car-mobile__header_title {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .car-mobile__header_subtitle {
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #848484;
+  }
+  .car-mobile__descr {
+    margin-top: 16px;
+  }
+  .car-mobile__descr_item {
+    margin: 2px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .car-mobile__descr_item_title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #7F8187;
+  }
+  .car-mobile__descr_item_subtitle {
+    width: 170px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+  .car-mobile__descr_btn {
+    display: flex;
+    margin-top: 16px;
+  }
+  .car-mobile__descr_button {
+    background-color: transparent;
+    display: block;
+    width: 50%;
+    padding: 7px 0;
+    font-family: "Tilda Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    border: 1px solid #BEBEBE;
+    border-radius: 2px;
+  }
+  .car-mobile__descr_button_active {
+    color: #FFFFFF;
+    background-color: #044EF4;
+    border: 1px solid #044EF4;
+  }
+  .car-mobile__text {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .car-mobile__similar {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 2px rgba(5, 18, 50, 0.1);
+    border-radius: 10px;
+  }
+  .car-mobile__similar_descr {
+    padding: 0px 10px;
+  }
+  .car-mobile__similar_title {
+    margin-top: 28px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .car-mobile__similar_img {
+    border-radius: 10px;
+    background-image: url("./../img/slider/x_ray.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+  }
+  .car-mobile__descr_title {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .car-mobile__descr_subtitle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .car-mobile__descr_text {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #848484;
+  }
+  .car-mobile__descr_price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
