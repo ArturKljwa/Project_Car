@@ -1,0 +1,14 @@
+@media (max-width: 321px) {
+.container {
+    max-width: 300px;
+}
+.header__container {
+    display: none;
+}
+
+.header__container_mobile {
+    display: block;
+    background-color: $color-primary;
+}
+
+}

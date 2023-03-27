@@ -14,7 +14,26 @@
 
 <body>
     <header class="header">
+        <div class="container header__container_mobile">
+
+            <div class="hamburger">
+                <span class="hamburger_line"></span>
+                <span class="hamburger_line"></span>
+                <span class="hamburger_line"></span>
+            </div>
+            <a href="#" class="logo">
+                <object data="./assets/img/icons/Logo.svg" type="image/svg+xml" class="logo-object">
+                    Your browser does not support SVG
+                </object>
+            </a>
+            <div class="header__mobile_search">
+
+            </div>
+        </div>
         <div class="container header__container">
+
+
+
             <a href="#" class="logo">
                 <object data="./assets/img/icons/Logo.svg" type="image/svg+xml" class="logo-object">
                     Your browser does not support SVG
@@ -56,7 +75,103 @@
             </div>
         </div>
     </header>
+    <section class="catalog-mobile">
+        <div class="container catalog-mobile__container">
+            <div class="catalog-mobile__choice">
+                <button class="button-mobile button-mobile_choice button-mobile_active ">
+                    Марка и модель
+                </button>
+                <button class="button-mobile button-mobile_options">
+                    Параметры
+                </button>
+            </div>
+            <div class="catalog-mobile__choice">
+                <div class="catalog-mobile__filter_model">
+                    <div class="catalog-mobile__filter_model_title">Марка</div>
+                    <button class="button-mobile button-mobile_model">BMW</button>
+                </div>
+                <div class="catalog-mobile__filter_model">
+                    <div class="catalog-mobile__filter_model_title">Модель</div>
+                    <button class="button-mobile button-mobile_model">Все модели</button>
+                </div>
+                <div class="catalog-mobile__filter_model">
+                    <div class="catalog-mobile__filter_model_title">Параметры</div>
+                    <button class="button-mobile button-mobile_model">Год выпуска, Цена, Коробка</button>
+                </div>
+            </div>
+            <div class="catalog-mobile__selected">
+                <div class="catalog-mobile__selected_item">
+                    2009-2023
+                </div>
+                <div class="catalog-mobile__selected_item">
+                    до 300 тыс.
+                </div>
+                <div class="catalog-mobile__selected_item">
+                    Автомат
+                </div>
+            </div>
+            <div class="catalog-mobile__title">
+                <h2>Персональные рекомендации</h2>
+            </div>
+            <div class="catalog-mobile__content">
+                <div class="catalog-mobile__content_item">
+                    <div class="catalog-mobile__content_title">
+                        <h3>BMW 5 серии 520d VII (G30/g31), 2018</h3>
+                    </div>
+                    <div class="catalog-mobile__content_subtitle">
+                        2 500 300 ₽
+                    </div>
+                    <div class="card__img"></div>
+                    <div class="catalog-mobile__descr">
+                        <div class="catalog-mobile__descr_wrapper">
+                            <div class="catalog-mobile__descr_item">3.7 л/330 л.с./Бензин</div>
+                            <div class="catalog-mobile__descr_item">Автомат</div>
+                            <div class="catalog-mobile__descr_item">Внедорожник</div>
+                            <button class=" button-mobile button-mobile_descr_active  button-mobile_descr">Цена в Москве
+                            </button>
+                        </div>
+                        <div class="catalog-mobile__descr_wrapper">
+                            <div class="catalog-mobile__descr_item">Полный</div>
+                            <div class="catalog-mobile__descr_item">High-tech</div>
+                            <div class="catalog-mobile__descr_item">82 опции</div>
+                            <button class=" button-mobile button-mobile_descr">Цена в Минске</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="catalog-mobile__content_item">
+                    <div class="catalog-mobile__content_title">
+                        <h3>BMW 5 серии 520d VII (G30/g31), 2018</h3>
+                    </div>
+                    <div class="catalog-mobile__content_subtitle">
+                        2 500 300 ₽
+                    </div>
+                    <div class="card__img"></div>
+                    <div class="catalog-mobile__descr">
+                        <div class="catalog-mobile__descr_wrapper">
+                            <div class="catalog-mobile__descr_item">3.7 л/330 л.с./Бензин</div>
+                            <div class="catalog-mobile__descr_item">Автомат</div>
+                            <div class="catalog-mobile__descr_item">Внедорожник</div>
+                            <button class=" button-mobile button-mobile_descr_active  button-mobile_descr">Цена в Москве
+                            </button>
+                        </div>
+                        <div class="catalog-mobile__descr_wrapper">
+                            <div class="catalog-mobile__descr_item">Полный</div>
+                            <div class="catalog-mobile__descr_item">High-tech</div>
+                            <div class="catalog-mobile__descr_item">82 опции</div>
+                            <button class=" button-mobile button-mobile_descr">Цена в Минске</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <button class=" button-mobile_show-more">Показать ещё</button>
+    </section>
     <section class="catalog">
+
         <div class="container">
             <div class="breadcrumbs">
                 <div class="container">
@@ -88,10 +203,10 @@
                         <option value="">Модель</option>
                         <option value="option1"></option>
                         <option value="option2"></option>
-                        <option value="option3"></option> -->
+                        <option value="option3"></option>
                     </select>
                     <select id="Generation" class="select select__Generation" disabled>
-                        <option value="">Поколение</option> -->
+                        <option value="">Поколение</option>
                         <option value="option1">BMW</option>
                         <option value="option2">Audi</option>
                         <option value="option3">Lada</option>
@@ -942,6 +1057,7 @@
             <p class="footer__text">© Все права защищены</p>
         </div>
     </footer>
+
 </body>
 
 </html>

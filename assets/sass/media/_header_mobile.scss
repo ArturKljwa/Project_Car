@@ -1,0 +1,29 @@
+@media (max-width: 321px) {
+.hamburger {
+    width: 24px;
+    &_line {
+        display: block;
+        height: 2px;
+        background-color: #fff;
+        margin-bottom: 6px;
+        border-radius: 20px;
+    }
+}
+.logo-object {
+    width: 41%;
+}
+.header__container_mobile {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__mobile_search {
+    width: 24px;
+    height: 24px;
+    background-image: url('./../img/icons/search.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+}

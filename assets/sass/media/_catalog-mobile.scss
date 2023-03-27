@@ -1,0 +1,118 @@
+@media (max-width: 321px) {
+.catalog {
+    display: none;
+}
+.catalog-mobile {
+    display: block;
+}
+}
+.catalog-mobile__choice {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px 1px rgba(5, 11, 24, 0.1);
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.catalog-mobile__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-mobile__filter_model {
+    border-bottom: 1px solid #BEBEBE;
+        border-radius: 10px;
+        &:last-child {
+            border:none;
+        }
+    &_title {
+        margin-left: 12px;
+        margin-top: 8px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        color: #848484;
+
+    }
+}
+.catalog-mobile__selected {
+    display: flex;
+    column-gap: 9px;
+    flex-wrap: wrap;
+}
+.catalog-mobile__selected_item {
+    width: 82px;
+    height: 20px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    background: #044EF4;
+    border-radius: 2px;
+    padding: 4px;
+    color: $color-additional;
+    position: relative;
+}
+.catalog-mobile__selected_item::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-image: url('./../img/icons/close.svg');
+    background-color: rgba(255, 255, 255, 0.2);
+    background-repeat:no-repeat;
+    background-size: auto;
+    background-position: center;
+    border-radius:50%;
+    top: 4px;
+    right: 5px;
+
+}
+.catalog-mobile__title {
+    margin-top: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.catalog-mobile__content_item {
+    margin: 14px 0;
+}
+.catalog-mobile__content_title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 4px;
+}
+.catalog-mobile__content_subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+.catalog-mobile__descr {
+    display: flex;
+}
+.catalog-mobile__descr_wrapper {
+    width: 50%;
+    margin-top: 12px;
+
+}
+.catalog-mobile__descr_item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #7F8187;
+    margin-bottom: 4px;
+}
+.button-mobile_show-more {
+    display: block;
+    width: 100%;
+    color: $color-additional;
+    border: none;
+    padding: 20px 0;
+    background-color: #FF0000;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}

@@ -109,14 +109,14 @@ margin-top: 45px;
 .button__descr_request {
     border: 2px solid $color-primary;
 }
-.button__main_descr {
+.tabs__btn-item {
     padding-right: 20px;
     font-size: 20px;
     line-height: 24px;
     margin-right: 20px;
     position: relative;
 }
-.button__main_descr::after {
+.tabs__btn-item::after {
     position: absolute;
     content: '';
     display: block;
@@ -126,10 +126,10 @@ margin-top: 45px;
     height: 20px;
     background-color: $color-primary;
 }
-.button__main_descr_active {
+.tabs__btn-item-active {
 font-weight: 700;
 }
-.button__main_descr:before {
+.tabs__btn-item:before {
     position: absolute;
     content: '';
     display: block;

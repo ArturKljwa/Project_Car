@@ -8,6 +8,8 @@
 @import "base/breadcrumbs";
 @import "base/title";
 @import "base/buttons";
+@import "base/tabs";
+
 
 //components
 @import "components/navigation";
@@ -24,3 +26,12 @@
 @import "layouts/container";
 @import "layouts/columns";
 @import "layouts/footer";
+
+
+//Media
+@import "media/media";
+@import "media/header_mobile";
+@import "media/catalog-mobile";
+@import "media/contacts-mobile";
+@import "media/footer_mobile";
+@import "media/button-mobile";
