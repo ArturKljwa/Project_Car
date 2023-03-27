@@ -958,6 +958,8 @@ body {
 }
 @media (max-width: 321px) {
   .hamburger {
+    position: absolute;
+    left: 10px;
     width: 24px;
   }
   .hamburger_line {
@@ -967,8 +969,26 @@ body {
     margin-bottom: 6px;
     border-radius: 20px;
   }
+  .hamburger_active {
+    left: 250px;
+    z-index: 2;
+  }
+  .hamburger_active span {
+    transition: 0.5s all;
+    margin-bottom: -2px;
+  }
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
   .logo-object {
     width: 41%;
+    margin-left: 80px;
   }
   .header__container_mobile {
     height: 60px;
@@ -985,6 +1005,33 @@ body {
     background-position: center;
   }
 }
+.navigation-mobile {
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: -100%;
+  width: 90%;
+  height: 100vh;
+  padding: 0px 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.8s all;
+}
+.navigation-mobile_active {
+  left: 0;
+  z-index: 1;
+}
+.navigation-mobile__list {
+  border: none;
+  margin: 15px 0;
+  padding-right: 0px;
+}
+.navigation-mobile__item {
+  font-size: 15px;
+  color: #fff;
+}
+
 @media (max-width: 321px) {
   .catalog {
     display: none;
@@ -1299,6 +1346,7 @@ body {
     font-size: 12px;
     line-height: 14px;
     color: #848484;
+    margin-bottom: 16px;
   }
   .car-mobile__descr {
     margin-top: 16px;
